@@ -1,14 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
     width: 100%;
     min-height: 100%;
-}
-body {
-    background: linear-gradient(to bottom right, rgb(65, 1, 139) 10%, 75%, rgb(255, 150, 241) 90%);
 }
 
 #root {
