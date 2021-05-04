@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 function Resume(props) {
@@ -6,7 +7,7 @@ function Resume(props) {
         <main className="resume">
             <nav>
                 <h2>My Resume</h2>
-                <p><a className="resumeNav" href={process.env.PUBLIC_URL + '/'}>Go Back</a></p>
+                <p><li className="link-li resumeNav"><Link to='/'>Go Back</Link></li></p>
             </nav>
             <iframe src="https://drive.google.com/file/d/16Kmnugc5iNHDNC-bq64XLkFhbhowrnWW/preview" title="Resume PDF"></iframe>
         </main>

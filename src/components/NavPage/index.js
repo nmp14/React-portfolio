@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+import { Link } from "react-router-dom";
 import NavPageContext from "../../util/NavPageContext";
 import CubeFaceContext from "../../util/CubeFaceContext";
 import "./style.css";
@@ -45,7 +46,7 @@ function NavPage() {
             <div>
                 <button onClick={(e) => changeCube(e, "front")} id="home">Home</button>
                 <button onClick={(e) => changeCube(e, "left")} id="aboutMePage">About me</button>
-                <a href={process.env.PUBLIC_URL + '/Resume'}>Resume</a>
+                <li className="link-li"><Link to='/Resume'>Resume</Link></li>
                 <button onClick={(e) => changeCube(e, "bottom")} id="port">Portfolio</button>
             </div>
         </div>

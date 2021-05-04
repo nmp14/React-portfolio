@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as RouterisCool, Route } from "react-router-dom";
+import { HashRouter as RouterisCool, Route, Link } from "react-router-dom";
 import Wrapper from "./components/Wrapper";
 import Home from "./pages/Home";
 import Resume from "./pages/Resume";
