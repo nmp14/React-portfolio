@@ -1,14 +1,14 @@
 import React from "react";
+import "./style.css";
+import Wrapper from "../../components/Wrapper";
+import Cube from "../../components/Cube";
 
-class Home extends React.Component {
-
-    render() {
-        return (
-            <div>
-
-            </div>
-        )
-    }
+function Home(props) {
+    return (
+        <Wrapper>
+            <Cube />
+        </Wrapper>
+    )
 }
 
 export default Home;
