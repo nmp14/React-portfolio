@@ -8,7 +8,7 @@ const styles = {
 }
 
 function Wrapper(props) {
-    return <main style={{ ...styles.margin, ...styles.padding, ...styles.width100, ...styles.height100 }}>{props.children}</main>
+    return <div style={{ ...styles.margin, ...styles.padding, ...styles.width100, ...styles.height100 }}>{props.children}</div>
 }
 
 export default Wrapper;
