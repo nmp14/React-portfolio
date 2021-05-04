@@ -8,8 +8,8 @@ function App(props) {
     return (
         <RouterisCool>
             <Wrapper>
-                <Route exact path="/react-portfolio" component={Home} />
-                <Route exact path="/react-portfolio/Resume" component={Resume} />
+                <Route exact path="/React-portfolio/" component={Home} />
+                <Route exact path="/React-portfolio//Resume" component={Resume} />
             </Wrapper>
         </RouterisCool>
     )
