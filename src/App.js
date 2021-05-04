@@ -6,14 +6,12 @@ import Resume from "./pages/Resume";
 
 function App(props) {
     return (
-        <div>
-            <RouterisCool>
-                <Wrapper>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/Resume" component={Resume} />
-                </Wrapper>
-            </RouterisCool>
-        </div>
+        <RouterisCool>
+            <Wrapper>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/Resume" component={Resume} />
+            </Wrapper>
+        </RouterisCool>
     )
 }
 
