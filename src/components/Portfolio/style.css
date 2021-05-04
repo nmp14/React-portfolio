@@ -1,0 +1,89 @@
+.cube .cube-face-bottom {
+    background: #111;
+    color: #c7fbff
+}
+
+.cube .cube-face-bottom h2,
+.cube .cube-face-left h2 {
+    margin: 30px;
+    font-size: 30px;
+}
+
+.cube .cube-face-bottom .portfolio {
+    width: 94%;
+    background: orange !important;
+    margin: 50px auto;
+}
+.portfolio {position: relative;}
+.portfolio #portfolioHeader {font-size: 24px; padding-top: 20px;}
+.portfolio .card {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2%;
+}
+
+.portfolio .card .card-header {
+    width: 100%;
+    background: teal;
+    padding: 10px 8px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 22px;
+}
+
+.portfolio .card .card-body {
+    width: 100%;
+    height: 450px;
+}
+.portfolio .card .card-body img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.card-end {
+    width: 100%;
+    min-height: 30px;
+}
+
+.project-descriptions {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background: #555;
+}
+.project-descriptions #projectTitle {
+    font-size: 32px;
+    color: rgb(0, 214, 214);
+    margin: 20px 0;
+}
+.project-descriptions .project-description-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 22px;
+    color: #fff;
+}
+.project-descriptions .project-description-container h5 {
+    font-size: 28px; 
+    padding: 0; 
+    margin: 8px 0;
+    color: rgb(0, 214, 214)
+}
+.project-descriptions button {
+    border: none;
+    background-color: rgb(0, 132, 255);
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.project-descriptions .project-description-container ul {
+    margin: 5px 40px;
+}
