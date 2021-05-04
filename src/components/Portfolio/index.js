@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../Header";
 import ProjectDescPage from "../ProjectDescPage";
 import getProject from "../../util/Project";
+import Card from "../Card";
 import "./style.css";
 
 function Portfolio() {
@@ -47,54 +48,50 @@ function Portfolio() {
 
                 <p id="portfolioHeader" className="center-text">Click images for more details!</p>
                 {/* Moods project */}
-                <div className="card">
-                    <div className="card-header">
-                        <h3 className="center-text">#Moods</h3>
-                    </div>
-                    <div className="card-body">
-                        <img onClick={(e) => getProjectDesc(e)} data-title="moods" src="Images/moods_page-min.png"
-                            alt="#Moods app home page. Music social media platform." />
-                    </div>
-                </div>
+                <Card
+                    title={"#Moods"}
+                    url={"Images/moods_page-min.png"}
+                    alt={"#Moods app home page. Music social media platform"}
+                    dataTitle={"moods"}
+                    getProjectDesc={getProjectDesc}
+                />
+
                 {/* FSU lab site */}
-                <div className="card">
-                    <div className="card-header">
-                        <h3 className="center-text">Stiegman Lab (FSU)</h3>
-                    </div>
-                    <div className="card-body">
-                        <img onClick={(e) => getProjectDesc(e)} data-title="stiegman-lab" src="Images/StiegmanLab-min.png"
-                            alt="Site for Dr. Stiegman's chemistry lab at FSU" />
-                    </div>
-                </div>
+                <Card
+                    title={"Stiegman Lab (FSU)"}
+                    url={"Images/StiegmanLab-min.png"}
+                    alt={"#Site for Dr. Stiegman's chemistry lab at FSU"}
+                    dataTitle={"stiegman-lab"}
+                    getProjectDesc={getProjectDesc}
+                />
+
                 {/* AniMoves project */}
-                <div className="card">
-                    <div className="card-header">
-                        <h3 className="center-text">AniMoves</h3>
-                    </div>
-                    <div className="card-body">
-                        <img onClick={(e) => getProjectDesc(e)} data-title="ani-moves" src="Images/animove-min.png"
-                            alt="Homepage for animoves app that keeps track of anime and movies" />
-                    </div>
-                </div>
+                <Card
+                    title={"AniMoves"}
+                    url={"Images/animove-min.png"}
+                    alt={"#Homepage for animoves app that keeps track of anime and movies"}
+                    dataTitle={"ani-moves"}
+                    getProjectDesc={getProjectDesc}
+                />
+
                 {/*  BudgeGrub */}
-                <div className="card">
-                    <div className="card-header">
-                        <h3 className="center-text">BudgeGrub</h3>
-                    </div>
-                    <div className="card-body">
-                        <img onClick={(e) => getProjectDesc(e)} data-title="budge-grub" src="Images/BudgeGrub.png"
-                            alt="Budge grub app" />
-                    </div>
-                </div>
+                <Card
+                    title={"BudgeGrub"}
+                    url={"Images/BudgeGrub.png"}
+                    alt={"Budge grub app"}
+                    dataTitle={"budge-grub"}
+                    getProjectDesc={getProjectDesc}
+                />
+
                 {/* BlogPosts  */}
-                <div className="card">
-                    <div className="card-header">
-                        <h3 className="center-text">BlogPosts</h3>
-                    </div>
-                    <div className="card-body">
-                        <img onClick={(e) => getProjectDesc(e)} data-title="blog-posts" src="Images/tech_blog.png" alt="Blog post app" />
-                    </div>
-                </div>
+                <Card
+                    title={"BlogPosts"}
+                    url={"Images/tech_blog.png"}
+                    alt={"Blog post app"}
+                    dataTitle={"blog-posts"}
+                    getProjectDesc={getProjectDesc}
+                />
+
                 <div className="card-end"></div>
             </div>
         </section>
