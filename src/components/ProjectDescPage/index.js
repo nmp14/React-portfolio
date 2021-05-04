@@ -32,7 +32,7 @@ function ProjectDescPage(props) {
                 <p id="projectRole">{role}</p>
 
                 <div className="custom-flex">
-                    <a href={url} id="projectLink" target="_blank" rel="noopener">
+                    <a href={url} id="projectLink" target="_blank" rel="noreferrer">
                         <button>Deployed App or Demo (click here)</button>
                     </a>
                 </div>

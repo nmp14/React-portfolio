@@ -92,14 +92,4 @@ const displayProject = (title, description, techArr, url, role = "Individual pro
     return ProjectToDisplay;
 }
 
-// Loops through tech array and appends them as list items to ul.
-const populateTech = (arr) => {
-    arr.forEach(tech => {
-        const li = document.createElement("li");
-        li.innerHTML = tech;
-        document.getElementById("projectTech").append(li);
-    });
-}
-
-
 export default getProject;

@@ -6,7 +6,11 @@
 .resume nav {
     position: relative;
     width: 100%;
-    padding: 30px;
+}
+
+.resumeNav {
+    color: rgb(0, 145, 194);
+    text-decoration: underline;
 }
 
 .resume nav h2 {
