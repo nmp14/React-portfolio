@@ -11,7 +11,7 @@ function Resume(props) {
                     <p><a href="/">Go Back</a></p>
                 </nav>
             </Header>
-            <iframe src="https://drive.google.com/file/d/16Kmnugc5iNHDNC-bq64XLkFhbhowrnWW/preview"></iframe>
+            <iframe src="https://drive.google.com/file/d/16Kmnugc5iNHDNC-bq64XLkFhbhowrnWW/preview" title="Resume PDF"></iframe>
         </main>
     )
 }
