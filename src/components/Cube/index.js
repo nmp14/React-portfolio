@@ -17,12 +17,13 @@ function Cube(props) {
         setCubeFace(side);
     }
 
-    const handleNavPageChange = (event) => {
+    const handleNavPageChange = (event, toggleAnimate) => {
         event.preventDefault();
         const newNavState = !navState
         setNavState(newNavState);
 
-        if (!animateNavPage) setAnimateNavPageState(true);
+        if (!animateNavPage && !toggleAnimate) setAnimateNavPageState(true);
+        if (toggleAnimate) setAnimateNavPageState(false);
     }
 
     return (

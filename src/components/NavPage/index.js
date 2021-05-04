@@ -1,9 +1,11 @@
 import React, { useContext, useEffect } from "react";
 import NavPageContext from "../../util/NavPageContext";
+import CubeFaceContext from "../../util/CubeFaceContext";
 import "./style.css";
 
 function NavPage() {
     const { navState, handleNavPageChange, animateNavPage } = useContext(NavPageContext);
+    const { handleCubeFaceChange } = useContext(CubeFaceContext);
 
     useEffect(() => {
         const navPage = document.getElementById("navPage");
@@ -28,16 +30,23 @@ function NavPage() {
 
     }, [navState, animateNavPage]);
 
+    const changeCube = (e, face) => {
+        e.preventDefault();
+
+        handleCubeFaceChange(`show-${face}`);
+        handleNavPageChange(e, true);
+    }
+
     return (
         <div id="navPage" className={"nav-page custom-flex flex-align"}>
             <div className="nav-close">
                 <button onClick={(e) => handleNavPageChange(e)}>X</button>
             </div>
             <div>
-                <button id="home">Home</button>
-                <button id="aboutMePage">About me</button>
+                <button onClick={(e) => changeCube(e, "front")} id="home">Home</button>
+                <button onClick={(e) => changeCube(e, "left")} id="aboutMePage">About me</button>
                 <a href="/resume">Resume</a>
-                <button id="port">Portfolio</button>
+                <button onClick={(e) => changeCube(e, "bottom")} id="port">Portfolio</button>
             </div>
         </div>
     )
