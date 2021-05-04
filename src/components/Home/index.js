@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./style.css";
+import NavPageContext from "../../util/NavPageContext";
 
 function Home() {
+    const { handleNavPageChange } = useContext(NavPageContext);
+
     return (
         // Front face of cube
         <section className="cube-face cube-face-front">
             <nav>
-                <i className="fas fa-bars"></i>
+                <i onClick={(e) => handleNavPageChange(e)} className="fas fa-bars"></i>
             </nav>
             <div className="center-me custom-flex flex-align">
                 <div>
