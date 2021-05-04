@@ -6,10 +6,10 @@ import Resume from "./pages/Resume";
 
 function App(props) {
     return (
-        <RouterisCool>
+        <RouterisCool basename={process.env.PUBLIC_URL}>
             <Wrapper>
-                <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-                <Route exact path={process.env.PUBLIC_URL + '/Resume'} component={Resume} />
+                <Route exact path='/' component={Home} />
+                <Route exact path='/Resume' component={Resume} />
             </Wrapper>
         </RouterisCool>
     )
