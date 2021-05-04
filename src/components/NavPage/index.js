@@ -26,7 +26,7 @@ function NavPage() {
             navPage.classList.add("slideIn");
         }
 
-    }, [navState]);
+    }, [navState, animateNavPage]);
 
     return (
         <div id="navPage" className={"nav-page custom-flex flex-align"}>
