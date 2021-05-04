@@ -4,7 +4,7 @@ import "./style.css";
 
 function Resume(props) {
     return (
-        <main>
+        <main className="resume">
             <Header>
                 <nav>
                     <h2>My Resume</h2>

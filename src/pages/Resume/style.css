@@ -1,24 +1,24 @@
-main {
+.resume {
     width: 100%;
     height: 100%;
 }
 
-nav {
+.resume nav {
     position: relative;
     width: 100%;
     padding: 30px;
 }
 
-nav h2 {
+.resume nav h2 {
     font-size: 36px;
     text-align: center;
 }
-nav p {
+.resume nav p {
     text-align: center;
     font-size: 22px;
     margin-top: 12px;
 }
-iframe {
+.resume iframe {
     width: 100%;
     height: 100%;
 }
