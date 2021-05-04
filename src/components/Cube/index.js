@@ -3,7 +3,7 @@ import "./style.css";
 import Home from "../Home";
 import AboutMe from "../AboutMe";
 import Portfolio from "../Portfolio";
-import CubeFaceContext from "../../util/cubeFaceContext";
+import CubeFaceContext from "../../util/CubeFaceContext";
 import NavPage from "../../components/NavPage";
 import NavPageContext from "../../util/NavPageContext";
 

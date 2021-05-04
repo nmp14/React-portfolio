@@ -1,9 +1,16 @@
 import React, { useContext } from "react";
 import "./style.css";
 import NavPageContext from "../../util/NavPageContext";
+import CubeFaceContext from "../../util/CubeFaceContext"
 
 function Home() {
     const { handleNavPageChange } = useContext(NavPageContext);
+    const { handleCubeFaceChange } = useContext(CubeFaceContext);
+
+    const cubeChange = (e) => {
+        e.preventDefault();
+        handleCubeFaceChange("show-bottom");
+    }
 
     return (
         // Front face of cube
@@ -32,7 +39,7 @@ function Home() {
             {/* Down arrow for portfolio */}
             <div className="arrow-container">
                 <h2 className="center-text portfolio">Portfolio</h2>
-                <div id="downArrow" className="arrow-2">
+                <div onClick={(e) => cubeChange(e)} id="downArrow" className="arrow-2">
                     <i className="fa fa-angle-down"></i>
                 </div>
             </div>
