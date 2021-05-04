@@ -1,0 +1,36 @@
+.nav-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0450c4;
+    opacity: 0.8;
+    /* Add transform for safari compatibility.
+    Needs to be greater than transform of other elements (aka the cube faces */
+    transform: translate3d(0, 0, 100vw);
+    z-index: 10;
+}
+
+.nav-page a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.nav-page a:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content:" ";
+    clear: both;
+    height: 0;
+}
+
+.nav-page .nav-close {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
