@@ -201,3 +201,96 @@ nav i {
 }
 
 /* End slide in and out animations */
+/* Media queries */
+@media only screen and (max-width: 1000px) {
+    .portfolio .card {
+        display: block;
+        width: 95% !important;
+        margin-top: 20px !important;
+    }
+    .portfolio .card:first-child {
+        padding-top: 25px !important;
+    }
+    .portfolio .card:last-child .card-body{
+        padding-bottom: 30px !important;
+        margin-bottom: 30px !important;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .portfolio .card .card-header {
+        font-size: 26px;
+    }
+    .portfolio .card .card-body{
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #aboutMeFlex {display: block;}
+    .cube-face-left .selfie,
+    .cube-face-left .info {
+        width: 100% !important;
+        height: initial !important;
+    }
+    .cube-face-left .selfie {
+        display: flex;
+        justify-content: center;
+    }
+    .cube-face-left .selfie img {max-width: 600px !important;}
+    .cube-face-left .info {
+        position: relative !important;
+        padding: 38px 10px !important;
+    }
+
+    .cube .cube-face-left .info h3 {
+        font-size: 26px !important;
+        margin-bottom: 10px !important;
+    }
+    .cube .cube-face-left .info p {font-size: 18px !important;}
+    /* Carrot leading to hobbies section on smaller screens */
+    .cube-face-left .info::before,
+    .cube-face-left .info::after {
+        content: "";
+        width: 75px !important;
+        height: 30px !important;
+        background: rgb(0, 0, 92);
+        position: absolute;
+        bottom: -0.7em !important;
+        z-index: 2;
+    }
+    .cube-face-left .info::before {
+        right: 50%;
+        transform: skew(0, 20deg);
+    }
+    .cube-face-left .info::after {
+        left: 50%;
+        transform: skew(0, -20deg);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .cube-face-left .hobbies ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cube-face-left .hobbies ul li {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    .cube-face-left .hobbies ul li i {font-size: 70px !important;}
+    .cube-face-left .hobbies ul li::after {
+        width: 4px;
+        height: 75px;
+        left: 73px;
+        bottom: -75px;
+    }
+
+    .project-descriptions #projectTitle {
+        font-size: 22px;
+    }
+    .project-descriptions .project-description-container {
+        font-size: 18px;
+        padding: 0 12px;
+    }
+}

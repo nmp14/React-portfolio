@@ -1,0 +1,80 @@
+.cube .cube-face-left {
+    background: #fff;
+    color: black;
+    overflow-y: scroll !important;
+}
+.cube-face-left h2 {
+    font-size: 36px !important;
+}
+.cube .cube-face-left .selfie {
+    width: 50%;
+    height: 70vh;
+}
+.cube .cube-face-left .selfie img {
+    width: 100%;
+    height: 100%;
+}
+.cube .cube-face-left .info {
+    width: 50%;
+    height: 70vh;
+    background: rgb(0, 0, 92);
+    color: rgb(187, 228, 255);
+    padding: 25px;
+    line-height: 1.6em;
+}
+.cube .cube-face-left .info h3 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+}
+.cube .cube-face-left .info p {
+    font-size: 22px;
+}
+
+.info p {
+    font-size: 1.1em;
+}
+
+.cube-face-left .hobbies {
+    width: 100%;
+    background: #24abff;
+    color: rgb(226, 226, 226);
+}
+.cube-face-left .hobbies h4 {
+    margin: 0;
+    font-size: 36px;
+    padding-top: 35px;
+}
+.cube-face-left .hobbies ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.cube-face-left .hobbies ul li {
+    position: relative;
+    list-style: none;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background: rgb(252, 251, 251);
+    color: #24abff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.cube-face-left .hobbies ul li i {font-size: 32px;}
+.hobbies ul li:after {
+    content: "";
+    position: absolute;
+    width: 9vw;
+    height: 5px;
+    background: rgb(0, 34, 128);
+    left: 8vw;
+}
+.hobbies ul li:last-child::after {
+    display: none;
+}
