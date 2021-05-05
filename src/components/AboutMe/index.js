@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Header";
 import "./style.css";
+import Footer from "../Footer";
 
 function AboutMe() {
     return (
@@ -45,6 +46,7 @@ function AboutMe() {
                     <li><i className="fas fa-utensils"></i></li>
                 </ul>
             </div>
+            <Footer />
         </section>
     )
 }

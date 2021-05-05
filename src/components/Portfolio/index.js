@@ -4,6 +4,7 @@ import ProjectDescPage from "../ProjectDescPage";
 import getProject from "../../util/Project";
 import Card from "../Card";
 import "./style.css";
+import Footer from "../Footer";
 
 function Portfolio() {
     const [projectState, setProjectState] = useState({
@@ -94,6 +95,7 @@ function Portfolio() {
 
                 <div className="card-end"></div>
             </div>
+            <Footer />
         </section>
     )
 }
