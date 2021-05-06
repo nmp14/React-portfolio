@@ -1,0 +1,9 @@
+.btn {
+    font-size: 20px;
+    padding: 8px 6px;
+    outline: none;
+    border: 1px solid #111;
+    border-radius: 5px;
+    min-width: 200px;
+    color: inherit;
+}

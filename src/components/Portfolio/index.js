@@ -5,6 +5,7 @@ import getProject from "../../util/Project";
 import Card from "../Card";
 import "./style.css";
 import Footer from "../Footer";
+import Button from "../Button";
 
 function Portfolio() {
     const [projectState, setProjectState] = useState({
@@ -36,6 +37,16 @@ function Portfolio() {
             <Header
                 h2={"My Portfolio"}
             />
+
+            <div className="custom-flex mb-3">
+                <Button bg={"teal"}>Front End Projects</Button>
+            </div>
+            <div className="custom-flex mb-3">
+                <Button bg={"orange"}>Full Stack Projects</Button>
+            </div>
+            <div className="custom-flex">
+                <Button>All Projects (default)</Button>
+            </div>
 
             <div className="portfolio">
                 <div id="top"></div>
