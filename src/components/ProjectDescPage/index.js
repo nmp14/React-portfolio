@@ -33,6 +33,9 @@ function ProjectDescPage(props) {
                 <h5>Role: </h5>
                 <p id="projectRole">{role}</p>
 
+                <h5>GitHub: </h5>
+                <p><u><a href={props.github} target="_blank" rel="noreferrer">{props.github}</a></u></p>
+
                 <div className="custom-flex">
                     <a href={url} id="projectLink" target="_blank" rel="noreferrer">
                         <button>Deployed App or Demo (click here)</button>

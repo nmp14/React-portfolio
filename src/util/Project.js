@@ -1,10 +1,11 @@
 class Project {
-    constructor(title, description, techArr, url, role) {
+    constructor(title, description, techArr, url, role, github) {
         this.title = title;
         this.description = description;
         this.tech = [...techArr];
         this.url = url;
         this.role = role;
+        this.github = github
     }
     getTitle() {
         return this.title;
@@ -18,6 +19,9 @@ class Project {
     getRole() {
         return this.role;
     }
+    getGithub() {
+        return this.github;
+    }
 }
 
 const getProject = async function (e) {
@@ -28,6 +32,7 @@ const getProject = async function (e) {
     var techArr;
     var url;
     var role;
+    var github;
 
     let project;
 
@@ -38,7 +43,8 @@ const getProject = async function (e) {
             techArr = ["JavaScript", "Handlebars.js", "Express.js", "Sequelize ORM", "Bulma CSS", "Bcrypt", "Socket.io", "Express-sessions"];
             url = "https://lychee-sundae-06249.herokuapp.com/";
             role = "Responsible for creating data organization and flow, all social media aspects, and overall CSS design."
-            project = await displayProject(title, description, techArr, url, role);
+            github = "https://github.com/NDHR-Magic/Socializing-The-Web";
+            project = await displayProject(title, description, techArr, url, role, github);
             break;
         case "stiegman-lab":
             title = "Stiegman Lab Database";
@@ -46,7 +52,8 @@ const getProject = async function (e) {
                 Update: Only currently will be used as a database for lab chemicals. Informational site will be deployed through university (WIP).`
             techArr = ["JavaScript", "Handlebars.js", "Sequelize"];
             url = "https://stiegman-lab.herokuapp.com/"
-            project = await displayProject(title, description, techArr, url, role);
+            github = "https://github.com/nmp14/Tony-Doesnt-Care";
+            project = await displayProject(title, description, techArr, url, role, github);
             break;
         case "budge-grub":
             title = "BudgeGrub";
@@ -54,7 +61,8 @@ const getProject = async function (e) {
             techArr = ["JavaScript", "Bootstrap CSS", "Anime.css", "Jquery", "Local storage", "Yelp API"];
             url = "https://www.youtube.com/watch?v=RPriWCY9QIw";
             role = "Responsible for retrieving form input, updating budget and querying the Yelp API with current budget info."
-            project = await displayProject(title, description, techArr, url, role);
+            github = "https://github.com/BudgeGrub/Budgegrub";
+            project = await displayProject(title, description, techArr, url, role, github);
             break;
         case "ani-moves":
             title = "AniMoves";
@@ -62,21 +70,24 @@ const getProject = async function (e) {
         Not deployed yet`;
             techArr = ["JavaScript", "Mongoose ODM", "Express.js", "Particles.js"];
             url = "#";
-            project = await displayProject(title, description, techArr, url, role);
+            github = "https://github.com/nmp14/Anime_list";
+            project = await displayProject(title, description, techArr, url, role, github);
             break;
         case "blog-posts":
             title = "BlogPosts";
             description = "A webapp for creating and reading otherss blog posts. You can register/login to create your own posts or comment on other user posts. A guest user can still read through blogs but won't be able to comment.";
             techArr = ["JavaScript", "Sequelize", "Express.js", "Bulma CSS"];
             url = "https://blog-posts-nmp14.herokuapp.com/";
-            project = await displayProject(title, description, techArr, url, role);
+            github = "https://github.com/nmp14/tech_blog";
+            project = await displayProject(title, description, techArr, url, role, github);
             break;
         case "employee-directory":
             title = "Employee Directory";
             description = "A react app for generating a table of cards for randomly generated users. The cards will display the employees name, email, phone number, and photo. As a user of the app, you can sort the cards by first or last name, as well as filter employees by name.";
             techArr = ["React.js", "Node.js", "Axios"];
             url = "https://nmp14.github.io/Employee-Directory/";
-            project = await displayProject(title, description, techArr, url, role);
+            github = "https://github.com/nmp14/Employee-Directory";
+            project = await displayProject(title, description, techArr, url, role, github);
             break;
         default:
         //NO
@@ -86,14 +97,14 @@ const getProject = async function (e) {
 }
 
 // Display selected project info
-const displayProject = (title, description, techArr, url, role = "Individual project") => {
+const displayProject = (title, description, techArr, url, role = "Individual project", github) => {
     // Scroll to top
     // document.location.href = "#";
     // document.location.href = "#top";
     document.getElementById("top").scrollIntoView();
 
     // Create project 
-    const ProjectToDisplay = new Project(title, description, techArr, url, role);
+    const ProjectToDisplay = new Project(title, description, techArr, url, role, github);
 
     return ProjectToDisplay;
 }

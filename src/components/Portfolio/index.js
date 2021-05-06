@@ -12,7 +12,8 @@ function Portfolio() {
         description: "",
         techArr: [1],
         url: "",
-        role: ""
+        role: "",
+        github: ""
     });
 
     const getProjectDesc = async (e) => {
@@ -23,7 +24,8 @@ function Portfolio() {
             description: projectInfo.description,
             techArr: projectInfo.tech,
             url: projectInfo.url,
-            role: projectInfo.role
+            role: projectInfo.role,
+            github: projectInfo.github
         });
 
         document.getElementById("projectDescriptions").classList.remove("hidden");
@@ -45,6 +47,7 @@ function Portfolio() {
                     techUsed={projectState.techArr}
                     url={projectState.url}
                     role={projectState.role}
+                    github={projectState.github}
                 />
 
                 <p id="portfolioHeader" className="center-text">Click images for more details!</p>
