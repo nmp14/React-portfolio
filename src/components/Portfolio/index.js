@@ -75,12 +75,12 @@ function Portfolio() {
                     getProjectDesc={getProjectDesc}
                 />
 
-                {/*  BudgeGrub */}
+                {/* Employee directory react app */}
                 <Card
-                    title={"BudgeGrub"}
-                    url={"Images/BudgeGrub.png"}
-                    alt={"Budge grub app"}
-                    dataTitle={"budge-grub"}
+                    title={"Employee Directory"}
+                    url={"Images/employee-directory-min.png"}
+                    alt={"Directory of employees sortable and filterable by names"}
+                    dataTitle={"employee-directory"}
                     getProjectDesc={getProjectDesc}
                 />
 
@@ -90,6 +90,15 @@ function Portfolio() {
                     url={"Images/tech_blog.png"}
                     alt={"Blog post app"}
                     dataTitle={"blog-posts"}
+                    getProjectDesc={getProjectDesc}
+                />
+
+                {/*  BudgeGrub */}
+                <Card
+                    title={"BudgeGrub"}
+                    url={"Images/BudgeGrub.png"}
+                    alt={"Budge grub app"}
+                    dataTitle={"budge-grub"}
                     getProjectDesc={getProjectDesc}
                 />
 

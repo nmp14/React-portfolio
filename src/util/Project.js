@@ -59,8 +59,6 @@ const getProject = async function (e) {
         case "ani-moves":
             title = "AniMoves";
             description = `WIP clone of myanimelist.org for keeping track of my own anime and movies all in one app. Can register and add animes / movies that are in the database to a favorite lists or to watch list. Primarily for practice with Mongoose ODM.
-        <br>
-        <br>
         Not deployed yet`;
             techArr = ["JavaScript", "Mongoose ODM", "Express.js", "Particles.js"];
             url = "#";
@@ -71,6 +69,13 @@ const getProject = async function (e) {
             description = "A webapp for creating and reading otherss blog posts. You can register/login to create your own posts or comment on other user posts. A guest user can still read through blogs but won't be able to comment.";
             techArr = ["JavaScript", "Sequelize", "Express.js", "Bulma CSS"];
             url = "https://blog-posts-nmp14.herokuapp.com/";
+            project = await displayProject(title, description, techArr, url, role);
+            break;
+        case "employee-directory":
+            title = "Employee Directory";
+            description = "A react app for generating a table of cards for randomly generated users. The cards will display the employees name, email, phone number, and photo. As a user of the app, you can sort the cards by first or last name, as well as filter employees by name.";
+            techArr = ["React.js", "Node.js", "Axios"];
+            url = "https://nmp14.github.io/Employee-Directory/";
             project = await displayProject(title, description, techArr, url, role);
             break;
         default:
