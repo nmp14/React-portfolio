@@ -1,4 +1,6 @@
 import React from "react";
+import Ul from "../Ul";
+import ListItem from "../ListItem";
 
 function ProjectDescPage(props) {
     const { title, desc, url, role, techUsed } = props;
@@ -22,11 +24,11 @@ function ProjectDescPage(props) {
                 <p id="projectInfo">{desc}</p>
 
                 <h5>Tech / Languages used: </h5>
-                <ul id="projectTech">
+                <Ul id={"projectTech"}>
                     {techUsed.map(tech => (
-                        <li key={tech}>{tech}</li>
+                        <ListItem key={tech}>{tech}</ListItem>
                     ))}
-                </ul>
+                </Ul>
 
                 <h5>Role: </h5>
                 <p id="projectRole">{role}</p>
