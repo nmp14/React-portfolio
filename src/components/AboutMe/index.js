@@ -20,10 +20,10 @@ function AboutMe() {
                     <div>
                         <h3 className="center-text">Nathan Peek <i>PhD</i> (Chemistry)</h3>
                         <p>
-                            An upcoming, enthusiastic web developer based in Florida, that loves
+                            An upcoming, enthusiastic software engineer based in Florida, that loves
                             problem solving and puzzles. Developed a strong critical-thinking skillset and objective
-                            perspective from the chemistry field Successfully graduted from a full-stack focused
-                            coding bootcamp hosted by the Unviersity of Miami.
+                            perspective from the chemistry field that I apply to my developement skills. Change the saying from, "Practice makes perfect" to, "Practice, debugging, and understanding make perfect!"
+                            Successfully graduted from a full-stack focused coding bootcamp hosted by the Unviersity of Miami.
                         </p>
                         <br />
                         <p>
