@@ -36,12 +36,18 @@
     font-size: 1.1em;
 }
 
+.cube-face-left .skills {
+    background:rgb(18, 81, 255);
+    color: #fff;
+}
+
 .cube-face-left .hobbies {
     width: 100%;
     background: #24abff;
     color: rgb(226, 226, 226);
 }
-.cube-face-left .hobbies h4 {
+.cube-face-left .hobbies h4,
+.cube-face-left .skills h4{
     margin: 0;
     font-size: 36px;
     padding-top: 35px;

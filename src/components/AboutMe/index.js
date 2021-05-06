@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../Header";
 import "./style.css";
 import Footer from "../Footer";
+import Ul from "../Ul";
+import ListItem from "../ListItem";
 
 function AboutMe() {
     return (
@@ -34,6 +36,19 @@ function AboutMe() {
                         </p>
                     </div>
                 </div>
+            </div>
+            <div className="skills">
+                <h4 className="center-text">Skills</h4>
+                <Ul>
+                    <ListItem>React</ListItem>
+                    <ListItem>JavaScript</ListItem>
+                    <ListItem>HTML</ListItem>
+                    <ListItem>CSS</ListItem>
+                    <ListItem>SQL (MySQL)</ListItem>
+                    <ListItem>noSQL (MongoDB)</ListItem>
+                    <ListItem>Node.js</ListItem>
+                    <ListItem>Express.js</ListItem>
+                </Ul>
             </div>
             <div className="hobbies">
                 <h4 className="center-text">Hobbies</h4>
