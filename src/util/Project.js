@@ -83,8 +83,9 @@ const getProject = async function (e) {
 // Display selected project info
 const displayProject = (title, description, techArr, url, role = "Individual project") => {
     // Scroll to top
-    document.location.href = "#";
-    document.location.href = "#top";
+    // document.location.href = "#";
+    // document.location.href = "#top";
+    document.getElementById("top").scrollIntoView();
 
     // Create project 
     const ProjectToDisplay = new Project(title, description, techArr, url, role);
