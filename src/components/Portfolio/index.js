@@ -38,16 +38,6 @@ function Portfolio() {
                 h2={"My Portfolio"}
             />
 
-            <div className="custom-flex mb-3">
-                <Button bg={"teal"}>Front End Projects</Button>
-            </div>
-            <div className="custom-flex mb-3">
-                <Button bg={"orange"}>Full Stack Projects</Button>
-            </div>
-            <div className="custom-flex">
-                <Button>All Projects (default)</Button>
-            </div>
-
             <div className="portfolio">
                 <div id="top"></div>
                 {/* Description of projects when clicked */}
@@ -62,6 +52,15 @@ function Portfolio() {
                 />
 
                 <p id="portfolioHeader" className="center-text">Click images for more details!</p>
+                {/* Code Pub project */}
+                <Card
+                    title={"Code Pub"}
+                    url={"Images/Code-Pub-min.png"}
+                    alt={"Homepage for Code Pub restaurant site"}
+                    dataTitle={"code-pub"}
+                    getProjectDesc={getProjectDesc}
+                />
+
                 {/* Moods project */}
                 <Card
                     title={"#Moods"}

@@ -89,6 +89,15 @@ const getProject = async function (e) {
             github = "https://github.com/nmp14/Employee-Directory";
             project = await displayProject(title, description, techArr, url, role, github);
             break;
+        case "code-pub":
+            title = "Code Pub";
+            description = `A mock site of a restaurant made with react.js and redux. Code Pub features user login authentication with json web tokens and the ability to purchase goods from our merch store.
+            We post events that users can sign up for as see a list of their events on their profile page. Users can also use our fun drink app that features a random drink generator using The Cocktail API, as well as a drink roulette wheel.
+            Checkout our menu as well.`;
+            techArr = ["React.js", "Redux", "Redux-thunk", "Node.js", "JavaScript", "Sequelize ORM", "jsonwebtokens npm", "axios", "framer-motion"]
+            url = "#";
+            github = "https://github.com/NDHR-Magic/Code-Pub";
+            project = await displayProject(title, description, techArr, url, role, github);
         default:
         //NO
     }
@@ -99,8 +108,6 @@ const getProject = async function (e) {
 // Display selected project info
 const displayProject = (title, description, techArr, url, role = "Individual project", github) => {
     // Scroll to top
-    // document.location.href = "#";
-    // document.location.href = "#top";
     document.getElementById("top").scrollIntoView();
 
     // Create project 
