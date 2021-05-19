@@ -95,7 +95,7 @@ const getProject = async function (e) {
             We post events that users can sign up for as see a list of their events on their profile page. Users can also use our fun drink app that features a random drink generator using The Cocktail API, as well as a drink roulette wheel.
             Checkout our menu as well.`;
             techArr = ["React.js", "Redux", "Redux-thunk", "Node.js", "JavaScript", "Sequelize ORM", "jsonwebtokens npm", "axios", "framer-motion"]
-            url = "#";
+            url = "https://github.com/NDHR-Magic/Code-Pub";
             github = "https://github.com/NDHR-Magic/Code-Pub";
             project = await displayProject(title, description, techArr, url, role, github);
         default:
