@@ -55,7 +55,7 @@ function Portfolio() {
                 {/* Code Pub project */}
                 <Card
                     title={"Code Pub"}
-                    url={`${process.env.PUBLIC_URL}/Images/Code-Pub-min.png`}
+                    url={`${process.env.PUBLIC_URL}/Images/code-Pub-min.png`}
                     alt={"Homepage for Code Pub restaurant site"}
                     dataTitle={"code-pub"}
                     getProjectDesc={getProjectDesc}
