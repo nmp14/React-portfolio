@@ -91,9 +91,8 @@ const getProject = async function (e) {
             break;
         case "code-pub":
             title = "Code Pub";
-            description = `A mock site of a restaurant made with react.js and redux to manage the states. Code Pub features user login authentication with json web tokens and the ability to purchase goods from our merch store.
-            The store currently uses ssandbox mode for PayPal checkout. We post events that users can sign up for as see a list of their events on their profile page. Users can also use our fun drink app that features a random drink generator using The Cocktail API, as well as a drink roulette wheel.
-            Checkout our menu as well. PayPal sandbox requires test info (Can't use your own credentials)`;
+            description = `A mock site of a restaurant made with React and Redux. Code Pub features user login authentication with json web tokens and the ability to purchase goods from our e-commerce store (Currently using sandbox mode for PayPal). 
+            Created by 5 developers and managed by myself. Features unit tests with Jest and React Testing Library.`;
             role = "Created design of site and database. Created merch store and drink app section. Created authentication with json web tokens. Began admin utilities"
             techArr = ["React.js", "Redux", "Redux-thunk", "Multer", "PayPal", "Node.js", "JavaScript", "Sequelize ORM", "jsonwebtokens npm", "axios", "framer-motion"]
             url = "https://code-pub.herokuapp.com/";
