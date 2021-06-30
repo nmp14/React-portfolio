@@ -9,7 +9,7 @@ function Resume(props) {
                 <h2>My Resume</h2>
                 <p><li className="link-li resumeNav"><Link to='/'>Go Back</Link></li></p>
             </nav>
-            <iframe src="https://drive.google.com/file/d/1xA4g29J5-1prKTXnSqd-R8cJfk4Zb8gg/preview" title="Resume PDF"></iframe>
+            <iframe src="https://drive.google.com/file/d/1JbpEG04XXkDQ0luEUM43XIKQte8pZ93i/preview" title="Resume PDF"></iframe>
         </main>
     )
 }
