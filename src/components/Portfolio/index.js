@@ -38,18 +38,18 @@ function Portfolio() {
                 h2={"My Portfolio"}
             />
 
+            <ProjectDescPage
+                title={projectState.title}
+                desc={projectState.description}
+                techUsed={projectState.techArr}
+                url={projectState.url}
+                role={projectState.role}
+                github={projectState.github}
+            />
+
             <div className="portfolio">
                 <div id="top"></div>
                 {/* Description of projects when clicked */}
-
-                <ProjectDescPage
-                    title={projectState.title}
-                    desc={projectState.description}
-                    techUsed={projectState.techArr}
-                    url={projectState.url}
-                    role={projectState.role}
-                    github={projectState.github}
-                />
 
                 <p id="portfolioHeader" className="center-text">Click images for more details!</p>
                 {/* Code Pub project */}

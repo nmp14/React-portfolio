@@ -15,7 +15,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
 }
 /* Cube face positions */
 .cube-face-back   { background: hsla(120, 100%, 50%); }

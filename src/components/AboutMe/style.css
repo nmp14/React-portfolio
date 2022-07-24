@@ -1,8 +1,17 @@
 .cube .cube-face-left {
     background: #fff;
     color: black;
-    overflow-y: scroll !important;
 }
+
+.cube-face-left .about-me-wrapper {
+    overflow-y: auto;
+    height: calc(100% - 160px);
+}
+
+.cube-face-left .about-me-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
 .cube-face-left h2 {
     font-size: 36px !important;
 }
