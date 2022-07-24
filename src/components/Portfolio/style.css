@@ -18,7 +18,7 @@
 }
 .portfolio::-webkit-scrollbar {
     display: none;
-  }
+}
 .portfolio {position: relative;}
 .portfolio #portfolioHeader {font-size: 24px; padding-top: 20px;}
 .portfolio .card {
