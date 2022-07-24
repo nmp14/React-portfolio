@@ -12,8 +12,8 @@
 .cube .cube-face-bottom .portfolio {
     width: 94%;
     background: orange !important;
-    margin: 50px auto;
-    height: calc(100% - 230px);
+    margin: 40px auto 10px auto;
+    height: calc(100% - 170px);
     overflow-y: auto;
 }
 .portfolio::-webkit-scrollbar {
