@@ -1,3 +1,5 @@
+Need to redo this... so bad.. so outdated.... The cube causes so many problems over time.... it's awful. It was fun at the time. Also code quality is questionable.
+
 My portfolio page containing information about me, my contact information, and projects.
 
 Included contact information: facebook, github, email, and phone number.
